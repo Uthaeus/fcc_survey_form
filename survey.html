@@ -19,19 +19,18 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
-            <h4 class="mb-3">Billing address</h4>
             <form class="needs-validation" novalidate>
               <div class="row">
                 <div class="col-md-6 mb-3">
-                  <label for="firstName">First name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <label for="firstName">First name*</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="John" value="" required>
                   <div class="invalid-feedback">
                     Valid first name is required.
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="lastName">Last name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <label for="lastName">Last name*</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
                   <div class="invalid-feedback">
                     Valid last name is required.
                   </div>
@@ -39,7 +38,7 @@
               </div>
   
               <div class="mb-3">
-                <label for="username">Username</label>
+                <label for="username">Username*</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">@</span>
@@ -59,110 +58,122 @@
                 </div>
               </div>
   
-              <div class="mb-3">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                <div class="invalid-feedback">
-                  Please enter your shipping address.
-                </div>
-              </div>
-  
-              <div class="mb-3">
-                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-              </div>
-  
               <div class="row">
-                <div class="col-md-5 mb-3">
-                  <label for="country">Country</label>
-                  <select class="custom-select d-block w-100" id="country" required>
-                    <option value="">Choose...</option>
-                    <option>United States</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid country.
-                  </div>
+                <div class="col-md-8">
+                  <label for="current-role">Which option best describes your current role?*</label>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <label for="state">State</label>
-                  <select class="custom-select d-block w-100" id="state" required>
-                    <option value="">Choose...</option>
-                    <option>California</option>
+                <div class="col-md-4">
+                  <select class="custom-select d-block w-100" id="role" required>
+                    <option value="">Select an option</option>
+                    <option>Student</option>
+                    <option>Full-time Job</option>
+                    <option>Full-time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
                   </select>
+                
                   <div class="invalid-feedback">
-                    Please provide a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <label for="zip">Zip</label>
-                  <input type="text" class="form-control" id="zip" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Zip code required.
+                    Please select a role.
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <label for="like-most">What do you like most in FCC?*</label>
+                </div>
+                <div class="col-md-4">
+                  <select class="custom-select d-block w-100" id="like-most" required>
+                    <option value="">Select an option</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select an option.
+                  </div>
+                </div>
+              </div>
+              
               <hr class="mb-4">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="same-address">
-                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="save-info">
-                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+              <div class="row">
+                <div class="col-md-7">
+                  <h4 class="mb-3">Things that should be improved in the future<br /><small>(Check all that apply):</small></h4>
+                </div>
+                <div class="col-md-5">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="front-end">
+                    <label class="custom-control-label" for="front">Front-end Projects</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="back-end">
+                    <label class="custom-control-label" for="back">Back-end Projects</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="data-vis">
+                    <label class="custom-control-label" for="data">Data Visualization</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="challenges">
+                    <label class="custom-control-label" for="challenges">Challenges</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="open-source">
+                    <label class="custom-control-label" for="open">Open Source Community</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="gitter-help">
+                    <label class="custom-control-label" for="gitter">Gitter Help Rooms</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="vids">
+                    <label class="custom-control-label" for="videos">Videos</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="meet-ups">
+                    <label class="custom-control-label" for="meet">City Meetups</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="wiki">
+                    <label class="custom-control-label" for="wiki">Wiki</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="forum">
+                    <label class="custom-control-label" for="forum">Forum</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="adds">
+                    <label class="custom-control-label" for="adds">Additional Courses</label>
+                  </div>
+
+                </div>
               </div>
               <hr class="mb-4">
   
-              <h4 class="mb-3">Payment</h4>
+              <h4 class="mb-3">How likely is it that you would recommend freeCodeCamp to a friend?*</h4>
   
               <div class="d-block my-3">
                 <div class="custom-control custom-radio">
-                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                  <label class="custom-control-label" for="credit">Credit card</label>
+                  <input id="definitely" name="recommend" type="radio" class="custom-control-input" checked required>
+                  <label class="custom-control-label" for="definitely">Definitely</label>
                 </div>
                 <div class="custom-control custom-radio">
-                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="debit">Debit card</label>
+                  <input id="maybe" name="recommend" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="maybe">Maybe</label>
                 </div>
                 <div class="custom-control custom-radio">
-                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="paypal">PayPal</label>
+                  <input id="notsure" name="recommend" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="notsure">Not Sure</label>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="cc-name">Name on card</label>
-                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                  <small class="text-muted">Full name as displayed on card</small>
-                  <div class="invalid-feedback">
-                    Name on card is required
-                  </div>
+                <div class="col-md-10">
+                  <label for="cc-name">Share some suggestions.</label>
+                  <textarea class="form-control" id="suggestions" placeholder="Enter your suggestions here." rows="6" wrap="soft"></textarea>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="cc-number">Credit card number</label>
-                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Credit card number is required
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3 mb-3">
-                  <label for="cc-expiration">Expiration</label>
-                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Expiration date required
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <label for="cc-cvv">CVV</label>
-                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Security code required
-                  </div>
-                </div>
-              </div>
+              </div>             
               <hr class="mb-4">
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Survey</button>
             </form>
           </div>
         </div>
@@ -183,15 +194,12 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function() {
         'use strict';
 
         window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.getElementsByClassName('needs-validation');
 
-          // Loop over them and prevent submission
           var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
               if (form.checkValidity() === false) {
