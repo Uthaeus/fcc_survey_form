@@ -14,31 +14,23 @@
   <body class="bg-light">
     <div class="container">
       <div class="py-5 text-center">
-        <h2>Survey Form</h2>
-        <p class="lead">Please fill in the form and let us know how we can improve.</p>
+        <h1 id = "title">Survey Form</h1>
+        <p id="description" class="lead">Please fill in the form and let us know how we can improve.</p>
       </div>
 
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <form class="needs-validation" novalidate>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">First name*</label>
-                <input type="text" class="form-control" id="firstName" placeholder="John" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Last name*</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
+          <form id="survey-form" class="needs-validation" novalidate>
+                        
+            <div class="mb-3">
+              <label for="name">Name*</label>
+              <input type="text" class="form-control" id="name" placeholder="John Doe" value="" required>
+              <div class="invalid-feedback">
+                Valid name is required.
               </div>
             </div>
-
+          
             <div class="mb-3">
               <label for="username">Username*</label>
               <div class="input-group">
@@ -53,10 +45,18 @@
             </div>
 
             <div class="mb-3">
-              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <label for="email">Email*</label>
               <input type="email" class="form-control" id="email" placeholder="you@example.com">
               <div class="invalid-feedback">
                 Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="age">Age*</label>
+              <input type="number" class="form-control" id="number" placeholder="22">
+              <div class="invalid-feedback">
+                Please enter a valid age.
               </div>
             </div>
 
