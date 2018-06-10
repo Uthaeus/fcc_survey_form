@@ -24,7 +24,7 @@
           <form id="survey-form" class="needs-validation" novalidate>
                         
             <div class="mb-3">
-              <label for="name">Name*</label>
+              <label id="name-label" for="name">Name*</label>
               <input type="text" class="form-control" id="name" placeholder="John Doe" value="" required>
               <div class="invalid-feedback">
                 Valid name is required.
@@ -45,7 +45,7 @@
             </div>
 
             <div class="mb-3">
-              <label for="email">Email*</label>
+              <label id="email-label" for="email">Email*</label>
               <input type="email" class="form-control" id="email" placeholder="you@example.com">
               <div class="invalid-feedback">
                 Please enter a valid email address.
@@ -53,7 +53,7 @@
             </div>
 
             <div class="mb-3">
-              <label for="age">Age*</label>
+              <label id="number-label" for="age">Age*</label>
               <input type="number" class="form-control" id="number" placeholder="22">
               <div class="invalid-feedback">
                 Please enter a valid age.
@@ -65,7 +65,7 @@
                 <h6 class="mb-3">Which option best describes your current role?*</h6>
               </div>
               <div class="col-md-4">
-                <select class="custom-select d-block w-100" id="role" required>
+                <select class="custom-select d-block w-100" id="dropdown" required>
                   <option value="">Select an option</option>
                   <option>Student</option>
                   <option>Full-time Job</option>
@@ -105,47 +105,47 @@
               </div>
               <div class="col-md-5">
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="front-end">
+                  <input type="checkbox" class="custom-control-input" id="front-end" value="front-end">
                   <label class="custom-control-label" for="front">Front-end Projects</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="back-end">
+                  <input type="checkbox" class="custom-control-input" id="back-end" value="back-end">
                   <label class="custom-control-label" for="back">Back-end Projects</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="data-vis">
+                  <input type="checkbox" class="custom-control-input" id="data-vis" value="data-vis">
                   <label class="custom-control-label" for="data">Data Visualization</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="challenges">
+                  <input type="checkbox" class="custom-control-input" id="challenges" value="challenges">
                   <label class="custom-control-label" for="challenges">Challenges</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="open-source">
+                  <input type="checkbox" class="custom-control-input" id="open-source" value="open-source">
                   <label class="custom-control-label" for="open">Open Source Community</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="gitter-help">
+                  <input type="checkbox" class="custom-control-input" id="gitter-help" value="gitter">
                   <label class="custom-control-label" for="gitter">Gitter Help Rooms</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="vids">
+                  <input type="checkbox" class="custom-control-input" id="vids" value="videos">
                   <label class="custom-control-label" for="videos">Videos</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="meet-ups">
+                  <input type="checkbox" class="custom-control-input" id="meet-ups" value="meet-ups">
                   <label class="custom-control-label" for="meet">City Meetups</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="wiki">
+                  <input type="checkbox" class="custom-control-input" id="wiki" value="wiki">
                   <label class="custom-control-label" for="wiki">Wiki</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="forum">
+                  <input type="checkbox" class="custom-control-input" id="forum" value="forum">
                   <label class="custom-control-label" for="forum">Forum</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="adds">
+                  <input type="checkbox" class="custom-control-input" id="adds" value="adds">
                   <label class="custom-control-label" for="adds">Additional Courses</label>
                 </div>
 
@@ -182,7 +182,7 @@
               </div>
             </div>             
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Survey</button>
+            <button id="submit" class="btn btn-primary btn-lg btn-block" type="submit">Submit Survey</button>
           </form>
         </div>
       </div>
