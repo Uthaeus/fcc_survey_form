@@ -11,10 +11,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='survey.css'/>
   </head>
-  <body class="bg-light">
-    <div class="container">
+  <body>
+    <h1 id = "title" class="text-center">Survey Form</h1>
+
+    <div class="container bg-light">
       <div class="py-5 text-center">
-        <h1 id = "title">Survey Form</h1>
+        
         <p id="description" class="lead">Please fill in the form and let us know how we can improve.</p>
       </div>
 
@@ -54,7 +56,7 @@
 
             <div class="mb-3">
               <label id="number-label" for="age">Age*</label>
-              <input type="number" class="form-control" id="number" placeholder="22">
+              <input type="number" class="form-control" id="number" placeholder="22" min="6" max="99">
               <div class="invalid-feedback">
                 Please enter a valid age.
               </div>
@@ -106,15 +108,15 @@
               <div class="col-md-5">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="front-end" value="front-end">
-                  <label class="custom-control-label" for="front">Front-end Projects</label>
+                  <label class="custom-control-label" for="front-end">Front-end Projects</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="back-end" value="back-end">
-                  <label class="custom-control-label" for="back">Back-end Projects</label>
+                  <label class="custom-control-label" for="back-end">Back-end Projects</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="data-vis" value="data-vis">
-                  <label class="custom-control-label" for="data">Data Visualization</label>
+                  <label class="custom-control-label" for="data-vis">Data Visualization</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="challenges" value="challenges">
@@ -122,19 +124,19 @@
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="open-source" value="open-source">
-                  <label class="custom-control-label" for="open">Open Source Community</label>
+                  <label class="custom-control-label" for="open-source">Open Source Community</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="gitter-help" value="gitter">
-                  <label class="custom-control-label" for="gitter">Gitter Help Rooms</label>
+                  <label class="custom-control-label" for="gitter-help">Gitter Help Rooms</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="vids" value="videos">
-                  <label class="custom-control-label" for="videos">Videos</label>
+                  <label class="custom-control-label" for="vids">Videos</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="meet-ups" value="meet-ups">
-                  <label class="custom-control-label" for="meet">City Meetups</label>
+                  <label class="custom-control-label" for="meet-ups">City Meetups</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="wiki" value="wiki">
@@ -182,7 +184,7 @@
               </div>
             </div>             
             <hr class="mb-4">
-            <button id="submit" class="btn btn-primary btn-lg btn-block" type="submit">Submit Survey</button>
+            <button id="submit" class="btn btn-primary btn-lg btn-block sub-button" type="submit">Submit Survey</button>
           </form>
         </div>
       </div>
